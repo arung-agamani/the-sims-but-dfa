@@ -9,6 +9,8 @@ Repositori ini adalah repositori yang menampung proyek The Sims but DFA, yang di
 
 Spesifikasi tugas besar itu sendiri dapat dilihat di : https://irklab.site/spektubes1tbfo
 
+Proyek ini akan dikerjakan dalam bahasa Java, dengan paradigma OOP.
+
 ## Spesifikasi Project
 
 ## Implementasi Project
