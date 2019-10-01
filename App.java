@@ -25,6 +25,7 @@ public class App {
             switch (command) {
                 case "tidur" :
                     System.out.println("Tidur siang/malam?");
+                    System.out.print(">> ");
                     String tipe = sc.nextLine();
                     tipe.toLowerCase();
                     if (tipe.equals("siang") || tipe.equals("tidur siang")) {
@@ -55,9 +56,37 @@ public class App {
                         System.out.println("Masukan anda tidak valid.");
                     }
                     break;
+
+                case "tidur siang" :
+                    Player dummy2210 = new Player();
+                    dummy2210.energy = player.energy;
+                    dummy2210.fun = player.fun;
+                    dummy2210.hygiene = player.hygiene;
+                    dummy2210.Tidur("Siang");
+                    if ((dummy2210.energy > 15 || dummy2210.fun > 15 || dummy2210.hygiene > 15) || (dummy2210.energy < 0 || dummy2210.fun < 0 || dummy2210.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Tidur("Siang");
+                        player.PrintAtribut();
+                    }
+                    break;
+
+                case "tidur malam" :
+                    Player dummy11 = new Player();
+                    dummy11.energy = player.energy;
+                    dummy11.fun = player.fun;
+                    dummy11.hygiene = player.hygiene;;
+                    dummy11.Tidur("Malam");
+                    if ((dummy11.energy > 15 || dummy11.fun > 15 || dummy11.hygiene > 15) || (dummy11.energy < 0 || dummy11.fun < 0 || dummy11.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Tidur("Malam");
+                        player.PrintAtribut();
+                    }
                 
                 case "makan" :
                     System.out.println("Makan hamburger / pizza / steak and beans?");
+                    System.out.print(">> ");
                     String tipe2 = sc.nextLine();
                     tipe2.toLowerCase();
                     if (tipe2.equals("hamburger") || tipe2.equals("makan hamburger")){
@@ -101,8 +130,51 @@ public class App {
                     }
                     break;
 
+                case "makan hamburger" :
+                    Player dummy21 = new Player();
+                    dummy21.energy = player.energy;
+                    dummy21.fun = player.fun;
+                    dummy21.hygiene = player.hygiene;
+                    dummy21.Makan("Hamburger");
+                    if ((dummy21.energy > 15 || dummy21.fun > 15 || dummy21.hygiene > 15) || (dummy21.energy < 0 || dummy21.fun < 0 || dummy21.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Makan("Hamburger");
+                        player.PrintAtribut();
+                    }
+                    break;
+
+                case "makan pizza" :
+                    Player dummy22 = new Player();
+                    dummy22.energy = player.energy;
+                    dummy22.fun = player.fun;
+                    dummy22.hygiene = player.hygiene;
+                    dummy22.Makan("Pizza");
+                    if ((dummy22.energy > 15 || dummy22.fun > 15 || dummy22.hygiene > 15) || (dummy22.energy < 0 || dummy22.fun < 0 || dummy22.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Makan("Pizza");
+                        player.PrintAtribut();
+                    }
+                    break;
+
+                case "makan steak and beans" :
+                    Player dummy23 = new Player();
+                    dummy23.energy = player.energy;
+                    dummy23.fun = player.fun;
+                    dummy23.hygiene = player.hygiene;
+                    dummy23.Makan("Steak and Beans");
+                    if ((dummy23.energy > 15 || dummy23.fun > 15 || dummy23.hygiene > 15) || (dummy23.energy < 0 || dummy23.fun < 0 || dummy23.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Makan("Steak and Beans");
+                        player.PrintAtribut();
+                    }
+                    break;
+
                 case "minum" :
                     System.out.println("Minum air / kopi / jus?");
+                    System.out.print(">> ");
                     String tipe3 = sc.nextLine();
                     tipe3.toLowerCase();
                     if (tipe3.equals("air") || tipe3.equals("minum air")){
@@ -146,8 +218,50 @@ public class App {
                     }
                     break;
 
+                case "minum air" :
+                    Player dummy31 = new Player();
+                    dummy31.energy = player.energy;
+                    dummy31.fun = player.fun;
+                    dummy31.hygiene = player.hygiene;
+                    dummy31.Minum("Air");
+                    if ((dummy31.energy > 15 || dummy31.fun > 15 || dummy31.hygiene > 15) || (dummy31.energy < 0 || dummy31.fun < 0 || dummy31.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Minum("Air");
+                        player.PrintAtribut();
+                    }
+                    break;
+
+                case "minum kopi" :
+                    Player dummy32 = new Player();
+                    dummy32.energy = player.energy;
+                    dummy32.fun = player.fun;
+                    dummy32.hygiene = player.hygiene;
+                    dummy32.Minum("Kopi");
+                    if ((dummy32.energy > 15 || dummy32.fun > 15 || dummy32.hygiene > 15) || (dummy32.energy < 0 || dummy32.fun < 0 || dummy32.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Minum("Kopi");
+                        player.PrintAtribut();
+                    }
+                    break;
+                case "minum jus" :
+                    Player dummy33 = new Player();
+                    dummy33.energy = player.energy;
+                    dummy33.fun = player.fun;
+                    dummy33.hygiene = player.hygiene;
+                    dummy33.Minum("Jus");
+                    if ((dummy33.energy > 15 || dummy33.fun > 15 || dummy33.hygiene > 15) || (dummy33.energy < 0 || dummy33.fun < 0 || dummy33.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Minum("Jus");
+                        player.PrintAtribut();
+                    }
+                    break;
+
                 case "buang air" :
                     System.out.println("Buang air besar/kecil?");
+                    System.out.print(">> ");
                     String tipe4 = sc.nextLine();
                     tipe4.toLowerCase();
                     if (tipe4.equals("besar") || tipe4.equals("buang air besar")){
@@ -176,6 +290,33 @@ public class App {
                         }
                     } else {
                         System.out.println("Masukan anda tidak valid.");
+                    }
+                    break;
+                
+                case "buang air besar" :
+                    Player dummy41 = new Player();
+                    dummy41.energy = player.energy;
+                    dummy41.fun = player.fun;
+                    dummy41.hygiene = player.hygiene;
+                    dummy41.BuangAir("Besar");
+                    if ((dummy41.energy > 15 || dummy41.fun > 15 || dummy41.hygiene > 15) || (dummy41.energy < 0 || dummy41.fun < 0 || dummy41.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.BuangAir("Besar");
+                        player.PrintAtribut();
+                    }
+                    break;
+                case "buang air kecil" :
+                    Player dummy42 = new Player();
+                    dummy42.energy = player.energy;
+                    dummy42.fun = player.fun;
+                    dummy42.hygiene = player.hygiene;
+                    dummy42.BuangAir("Kecil");
+                    if ((dummy42.energy > 15 || dummy42.fun > 15 || dummy42.hygiene > 15) || (dummy42.energy < 0 || dummy42.fun < 0 || dummy42.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.BuangAir("Kecil");
+                        player.PrintAtribut();
                     }
                     break;
 
@@ -266,6 +407,7 @@ public class App {
 
                 case "membaca" :
                     System.out.println("Membaca koran/novel?");
+                    System.out.print(">> ");
                     String tipe5 = sc.nextLine();
                     tipe5.toLowerCase();
                     if (tipe5.equals("koran") || tipe5.equals("membaca koran")){
@@ -294,6 +436,34 @@ public class App {
                         }
                     } else {
                         System.out.println("Masukan anda tidak valid.");
+                    }
+                    break;
+                
+                case "membaca koran" :
+                    Player dummy7 = new Player();
+                    dummy7.energy = player.energy;
+                    dummy7.fun = player.fun;
+                    dummy7.hygiene = player.hygiene;
+                    dummy7.Membaca("Koran");
+                    if ((dummy7.energy > 15 || dummy7.fun > 15 || dummy7.hygiene > 15) || (dummy7.energy < 0 || dummy7.fun < 0 || dummy7.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Membaca("Koran");
+                        player.PrintAtribut();
+                    }
+                    break;
+
+                case "membaca novel" :
+                    Player dummy8 = new Player();
+                    dummy8.energy = player.energy;
+                    dummy8.fun = player.fun;
+                    dummy8.hygiene = player.hygiene;
+                    dummy8.Membaca("Novel");
+                    if ((dummy8.energy > 15 || dummy8.fun > 15 || dummy8.hygiene > 15) || (dummy8.energy < 0 || dummy8.fun < 0 || dummy8.hygiene < 0)) {
+                        System.out.println("Aksi tidak valid");
+                    } else {
+                        player.Membaca("Novel");
+                        player.PrintAtribut();
                     }
                     break;
 
